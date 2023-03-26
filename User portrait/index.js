@@ -11,51 +11,51 @@ let message;
 
 switch(yearOfBirth){
     case null:
-        message = `${missingInfo} рік свого народження`;
-        break;
+    message = `${missingInfo} рік свого народження`;
+    break;
     default:
-        message = `Вам ${age} років.`;
+    message = `Вам ${age} років.`;
 }
 
 if (city === null) {
-message += "\n" + missingInfo + " місто";
+message += '\n' + `${missingInfo} місто.`;
 } else {
-let capital;
-switch (city) {
-case "Київ":
-capital = "України";
-break;
-case "Вашингтон":
-capital = "США";
-break;
-case "Лондон":
-capital = "Великобританії";
-break;
-default:
-capital = "";
+    let capital;
+    switch (city) {
+    case 'Київ':
+    capital = 'України';
+    break;
+    case 'Вашингтон':
+    capital = 'США';
+    break;
+    case 'Лондон':
+    capital = 'Великобританії';
+    break;
+    default:
+    capital = '';
 }
-if (capital === "") {
-message += "\nТи живеш у місті " + city + ".";
+if (capital === '') {
+message += '\n' + `Ти живеш у місті ${city}.`;
 } else {
-message += "\nТи живеш у столиці " + capital + ".";
+message += '\n' + `Ти живеш у столиці ${capital}.`;
 }
 }
 
 if (favoriteSport === null) {
-message += "\n" + missingInfo + " улюблений вид спорту";
+message += '\n' + `${missingInfo} улюблений вид спорту`;
 } else {
-switch (favoriteSport) {
-case "футбол":
-message += "\nКруто! Хочеш стати Ліонелем Мессі?";
-break;
-case "теніс":
-message += "\nКруто! Хочеш стати Рафаелем Надалем?";
-break;
-case "баскетбол":
-message += "\nКруто! Хочеш стати Леброном Джеймсом?";
-break;
-default:
-message += "\nТвій улюблений вид спорту - " + favoriteSport + ".";
+    switch (favoriteSport) {
+    case 'футбол':
+    message += '\nКруто! Хочеш стати Ліонелем Мессі?';
+    break;
+    case 'бокс':
+    message += '\nКруто! Хочеш стати Александром Усиком?';
+    break;
+    case 'баскетбол':
+    message += '\nКруто! Хочеш стати Леброном Джеймсом?';
+    break;
+    default:
+    message += '\n' + `Твій улюблений вид спорту - ${favoriteSport}.`;
 }
 }
 
