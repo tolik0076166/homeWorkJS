@@ -87,7 +87,14 @@ function fillArray(rows, cols) {
   
   let rows = parseInt(prompt('Введіть кількість рядків: '));
   let cols = parseInt(prompt('Введіть кількість стовпців: '));
-  let arr = fillArray(rows, cols);
+  
+  if (isNaN(rows) || isNaN(cols)){
+    alert('Введіть числові значення для кількості рядків та стовпців!');
+  }else if (!rows || !cols){
+    alert('Введіть ненульові значення для кількості рядків та стовпців!');
+  }else{
+     fillArray(rows, cols);
+  }
    
   
 // A function that removes from the string all the characters that we passed in the second argument
