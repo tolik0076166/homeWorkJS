@@ -1,0 +1,2 @@
+Порівняння
+textContent vs innerHtml
