@@ -1,0 +1,29 @@
+ul{
+    list-style: none;
+    cursor: pointer;
+}
+
+button{
+  cursor: pointer;
+  display: none;
+}
+
+#buy-message{
+  display: none;
+}
+
+.categories {
+    float: left;
+    width: 30%;
+  }
+
+  .products {
+    float: left;
+    width: 30%;
+    
+  }
+
+  .product-info {
+    float: left;
+    width: 30%;
+  }
