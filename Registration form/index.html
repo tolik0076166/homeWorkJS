@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Registtration Form</title>
+</head>
+<body>
+<h1>Форма реєстрації</h1>
+ <form id="registration-form">
+  <label for="first-name">Ім'я:</label>
+  <input type="text" id="first-name" required><br>
+  
+  <label for="last-name">Прізвище:</label>
+  <input type="text" id="last-name" required><br>
+  
+  <label for="birthdate">Дата народження:</label>
+  <input type="text" id="birthdate" required><br>
+  
+  <label>Стать:</label>
+  <input type="radio" name="gender" value="male" id="gender-male" required>
+  <label for="gender-male">Чоловік</label>
+  <input type="radio" name="gender" value="female" id="gender-female" required>
+  <label for="gender-female">Жінка</label>
+  <br><br>
+  
+  <label for="city">Місто:</label>
+    <select id="city" required>
+     <option value="">Оберіть місто</option>
+     <option value="Kyiv">Київ</option>
+     <option value="Dnipro">Дніпро</option>
+    </select><br>
+  
+  <label for="address">Адреса:</label>
+  <textarea id="address" required></textarea><br>
+  
+  <label>Мови, якими володієте:</label>
+  <input type="checkbox" name="language" value="Ukrainian" id="language-ukrainian">
+  <label for="language-ukrainian">Українська</label>
+  <input type="checkbox" name="language" value="English" id="language-english">
+  <label for="language-english">Англійська</label>
+  <br><br>
+  
+  <button type="button" onclick="showTable()">Зберегти</button>
+ </form>
+  
+<div class="table-container" id="table-container">
+ <h2>Таблиця з даними</h2>
+  <table id="data-table">
+    <tr>
+     <th>Ім'я</th>
+     <th>Прізвище</th>
+     <th>Дата народження</th>
+     <th>Стать</th>
+     <th>Місто</th>
+     <th>Адреса</th>
+     <th>Мови</th>
+    </tr>
+   </table>
+  </div>
+
+ <script src="./index.js"></script>
+ </body>
+</html>
