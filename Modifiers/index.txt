@@ -39,16 +39,7 @@ while ((match = patterny.exec(texty)) !== null) {
 }
 
 
-'x': Цей модифікатор дозволяє використовувати пробіли та коментарі всередині регулярного виразу, і вони будуть проігноровані регулярним виразом. 
-
-Приклад з модифікатором x:
-
-const pattern = /a bc/x;
-
-let text = 'abc';
-let result = pattern.test(text);
-
-console.log(result);  --> true
+Модифікатор "x" не підтримується в мові JavaScript для регулярних виразів
 
 
 
