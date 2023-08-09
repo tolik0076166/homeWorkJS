@@ -1,0 +1,1 @@
+Демонстрація різниці Screen Width/Screen Height та Screen Avail Width/Screen Avail Height
