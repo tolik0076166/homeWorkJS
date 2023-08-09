@@ -7,5 +7,5 @@ document.getElementById('screenWidth').textContent = screenWidth;
 document.getElementById('screenHeight').textContent = screenHeight;
 document.getElementById('screenAvailWidth').textContent = screenAvailWidth;
 document.getElementById('screenAvailHeight').textContent = screenAvailHeight;   
-
+         
 
